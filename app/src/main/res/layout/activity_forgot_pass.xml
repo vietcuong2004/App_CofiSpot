@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ForgotPassActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#6F4E37">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="logout.json"
+        app:lottie_loop="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_marginBottom="40dp"
+            android:textColor="#FFF5E1"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFF5E1"/>
+
+        <EditText
+            android:id="@+id/edmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custtomedit"
+            android:padding="10dp"
+            android:textColor="#2F2F2F"/>
+
+        <Button
+            android:id="@+id/btnsenemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D2691E"
+            android:text="Send Request"
+            android:textColor="#FFF5E1"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

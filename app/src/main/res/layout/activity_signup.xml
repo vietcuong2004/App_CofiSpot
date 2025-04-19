@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignupActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#6F4E37">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#FFF5E1"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <!-- Thêm trường nhập tên người dùng -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:hint="Full Name"
+        android:gravity="center"
+        android:textColorHint="#D2691E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/custtomedit"
+            android:paddingLeft="10dp"
+            android:textColor="#2F2F2F"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Thêm trường nhập số điện thoại -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:hint="Phone Number"
+        android:gravity="center"
+        android:textColorHint="#D2691E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:background="@drawable/custtomedit"
+            android:paddingLeft="10dp"
+            android:textColor="#2F2F2F"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:hint="Email"
+        android:gravity="center"
+        android:textColorHint="#D2691E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custtomedit"
+            android:paddingLeft="10dp"
+            android:textColor="#2F2F2F"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:hint="Password"
+        android:gravity="center"
+        android:textColorHint="#D2691E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/custtomedit"
+            android:paddingLeft="10dp"
+            android:textColor="#2F2F2F"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:hint="Repeat Password"
+        android:gravity="center"
+        android:textColorHint="#D2691E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edrppassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/custtomedit"
+            android:paddingLeft="10dp"
+            android:textColor="#2F2F2F"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_margin="10dp"
+        android:backgroundTint="#D2691E"
+        android:textColor="#FFF5E1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản? "
+            android:textColor="#FFF5E1"/>
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập Ngay"
+            android:textStyle="italic"
+            android:textColor="#D2691E"/>
+    </LinearLayout>
+
+</LinearLayout>

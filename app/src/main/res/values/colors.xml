@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="coffee_primary">#6F4E37</color> <!-- Nâu cà phê đậm -->
+    <color name="coffee_primary_dark">#5A3D2B</color>
+    <color name="coffee_accent">#D2691E</color> <!-- Cam đất -->
+    <color name="coffee_secondary">#FFF5E1</color> <!-- Kem nhạt -->
+    <color name="text_primary">#2F2F2F</color> <!-- Xám than -->
+
+    <color name="divider_color">#E0D6C8</color>
+    <color name="map_card_background">#FAF6ED</color>
+</resources>

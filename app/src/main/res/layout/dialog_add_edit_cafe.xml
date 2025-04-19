@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Quán Cà Phê"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tên Quán -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="@color/coffee_primary"
+        android:hint="Tên Quán">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_cafe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custtomedit"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Địa Chỉ -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="@color/coffee_primary"
+        android:hint="Địa Chỉ">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_cafe_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custtomedit"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_primary" />
+
+            <ImageButton
+                android:id="@+id/btn_select_location"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_location"
+                android:contentDescription="Chọn vị trí trên bản đồ" />
+
+        </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Ho slice Động -->
+    <Spinner
+        android:id="@+id/spinner_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custtomedit"
+        android:padding="8dp" />
+
+    <!-- Mô Tả Hoạt Động Khác (Ẩn Mặc Định) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_other_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="@color/coffee_primary"
+        android:hint="Mô Tả Hoạt Động Khác"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_other_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custtomedit"
+            android:paddingStart="10dp"
+            android:maxLength="50"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Mô Tả Quán -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="@color/coffee_primary"
+        android:hint="Mô Tả Quán">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_cafe_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custtomedit"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Nút Thêm Hình Ảnh -->
+    <Button
+        android:id="@+id/btn_add_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/coffee_primary"
+        android:text="Thêm Hình Ảnh (Tối Đa 3)"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <!-- Container Hiển Thị Media -->
+    <HorizontalScrollView
+        android:id="@+id/media_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="horizontal" />
+
+    <!-- Nút Xác Nhận -->
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/coffee_primary"
+        android:text="Xác Nhận"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

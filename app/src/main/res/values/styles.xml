@@ -1,0 +1,8 @@
+<resources>
+    <!-- Style cho RatingBar với màu vàng -->
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressTint">#FFD700</item> <!-- Màu vàng cho ngôi sao đã chọn -->
+        <item name="android:secondaryProgressTint">#FFD700</item> <!-- Màu vàng cho ngôi sao phụ -->
+        <item name="android:progressBackgroundTint">#B0B0B0</item> <!-- Màu xám cho ngôi sao chưa chọn -->
+    </style>
+</resources>

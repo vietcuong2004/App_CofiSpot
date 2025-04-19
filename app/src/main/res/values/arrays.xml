@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Khoảng cách -->
+    <string-array name="distance_options">
+        <item>1 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+    </string-array>
+
+    <!-- Đánh giá -->
+    <string-array name="rating_options">
+        <item>Tất cả</item>
+        <item>3 sao trở lên</item>
+        <item>4 sao trở lên</item>
+        <item>5 sao</item>
+    </string-array>
+
+    <!-- Hoạt động -->
+    <string-array name="activity_search_options">
+        <item>Tất cả</item>
+        <item>Không có</item>
+        <item>Boardgame</item>
+        <item>Book</item>
+        <item>Workshop</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="activity_review_options">
+        <item>Không có</item>
+        <item>Boardgame</item>
+        <item>Book</item>
+        <item>Workshop</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

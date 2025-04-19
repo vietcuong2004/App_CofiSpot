@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/coffee_secondary">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_coffee_gradient"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="@color/text_primary"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Quản Lý Quán Cà Phê"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Biểu tượng Đăng Xuất -->
+        <ImageButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_logout"
+            android:contentDescription="Đăng Xuất" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- RecyclerView để hiển thị danh sách quán cà phê -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cafes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <!-- Nút Thêm Quán -->
+    <Button
+        android:id="@+id/btn_add_cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/coffee_primary"
+        android:text="Thêm Quán"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>
