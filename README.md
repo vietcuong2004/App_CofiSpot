@@ -241,7 +241,7 @@
 4. Chatbot phản hồi dựa trên từ khóa có sẵn.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/58d0d75f-6fce-49e4-8588-7a70959ac8be" alt="image" />
+  <img src="https://github.com/user-attachments/assets/dd8892a6-8c34-4415-a025-c5274ca700b7" alt="image" />
 </div>
 
 ---
