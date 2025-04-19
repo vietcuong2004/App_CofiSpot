@@ -246,4 +246,10 @@
 
 ---
 
-📌 **Các kiến thức sử dụng**: Firebase, Firestore, Google Maps API, Imgur API, RecyclerView, Navigation Drawer.
+📌 **Các kiến thức sử dụng**: 
+1. **Firebase Authentication**: Đăng ký, Đăng nhập phân quyền
+2. **Firestore Database**: Lưu trữ CSDL
+3. **Google Maps API**: tính năng chỉ đường, checkin, hiển thị quán cafe
+4. **Imgur API**: Lưu trữ hình ảnh, trả về hình ảnh dưới dạng URL
+5. **RecyclerView**: Hiển thị danh sách quán (Trang chủ Home, Trang Admin, Danh sách đánh giá)
+6. **Navigation Drawer**: Chia trang chủ thành 4 tab, hiển thị cửa sổ Chatbot, Cài đặt, Đăng xuất
