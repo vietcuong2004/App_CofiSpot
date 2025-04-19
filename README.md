@@ -246,7 +246,7 @@
 
 ---
 
-📌 **Các kiến thức sử dụng**: 
+## 📌 **Các kiến thức sử dụng**: 
 1. **Firebase Authentication**: Đăng ký, Đăng nhập phân quyền
 2. **Firestore Database**: Lưu trữ CSDL
 3. **Google Maps API**: tính năng chỉ đường, checkin, hiển thị quán cafe
